@@ -214,9 +214,9 @@ Configuration ADDomain_NewForest_Config
             Credential                    = $Credential
             SafemodeAdministratorPassword = $Credential
             ForestMode                    = 'WinThreshold'
-            SysvolPath                    = "E:\Windows\SYSVOL"
-            LogPath                       = "E:\windows\NTDS"
-            DatabasePath                  = "E:\windows\NTDS"
+            SysvolPath                    = 'E:\Windows\SYSVOL'
+            LogPath                       = 'E:\windows\NTDS'
+            DatabasePath                  = 'E:\windows\NTDS'
 
         }
 
