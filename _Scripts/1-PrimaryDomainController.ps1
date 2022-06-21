@@ -37,10 +37,10 @@ Configuration ADDomain_NewForest_Config
         [System.Management.Automation.PSCredential]
         $Credential,
 
-        [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty()]
-        [System.Management.Automation.PSCredential]
-        $SafeModePassword,
+        #[Parameter(Mandatory = $true)]
+        #[ValidateNotNullOrEmpty()]
+        #[System.Management.Automation.PSCredential]
+        #$SafeModePassword,
 
         [Int]$RetryCount=20,
         [Int]$RetryIntervalSec=30
@@ -212,7 +212,7 @@ Configuration ADDomain_NewForest_Config
             DomainName                    = $DomainName
             DomainNetBiosName             = $DomainNetBiosName
             Credential                    = $Credential
-            SafemodeAdministratorPassword = $SafeModePassword.Password
+            SafemodeAdministratorPassword = $Credential
             ForestMode                    = 'WinThreshold'
             SysvolPath                    = "E:\Windows\SYSVOL"
             LogPath                       = "E:\windows\NTDS"
