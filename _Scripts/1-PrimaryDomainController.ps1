@@ -212,8 +212,12 @@ Configuration ADDomain_NewForest_Config
             DomainName                    = $DomainName
             DomainNetBiosName             = $DomainNetBiosName
             Credential                    = $Credential
-            SafemodeAdministratorPassword = $SafeModePassword
+            SafemodeAdministratorPassword = $SafeModePassword.Password
             ForestMode                    = 'WinThreshold'
+            SysvolPath                    = "E:\Windows\SYSVOL"
+            LogPath                       = "E:\windows\NTDS"
+            DatabasePath                  = "E:\windows\NTDS"
+
         }
 
         PendingReboot RebootAfterInstallingAD
