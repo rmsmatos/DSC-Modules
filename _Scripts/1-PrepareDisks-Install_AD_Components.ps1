@@ -77,7 +77,7 @@
         PendingReboot RebootAfterInstallingAD
         {
             Name = 'RebootAfterInstallingAD'
-            DependsOn = "[xADDomainController]NextDC"
+            DependsOn = "[WindowsFeature]ADDSInstall"
         }
     }
 
